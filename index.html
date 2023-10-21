@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style_incial.css">
+    <title></title>
 </head>
 <body>
-    <h1>Jogo da Velha</h1>
-    <div id="mensagem"></div>
-    <div id="board" class="board">
-        <script src="game.js"></script>
-        <div class="cell" onclick="Movimento(0)"></div>
-        <div class="cell" onclick="Movimento(1)"></div>
-        <div class="cell" onclick="Movimento(2)"></div>
-        <div class="cell" onclick="Movimento(3)"></div>
-        <div class="cell" onclick="Movimento(4)"></div>
-        <div class="cell" onclick="Movimento(5)"></div>
-        <div class="cell" onclick="Movimento(6)"></div>
-        <div class="cell" onclick="Movimento(7)"></div>
-        <div class="cell" onclick="Movimento(8)"></div>
-    </div><br><br>
-    <div id="message"></div>
-    <br><br>
-     <div class="attpagina">
-        <button>Jogar Novamente?</button>
-     </div>
+    <div class="conteiner">
+        <div class="card">
+            <img src="./assets/images/isepe.png" class="img">
+            <form class="form-group" id="dataForm">
+                <label for="name">Jogador 1</label>
+                <input style="margin-bottom: 10px;" type="text" id="name" name="name" required>
+                
+                <label for="email">Telefone:</label>
+                <input style="margin-bottom: 10px;" type="tel" id="email" name="email" required>
+
+                <label for="name2">Jogador 2</label>
+                <input style="margin-bottom: 10px;" type="text" id="name2" name="name2" required>
+                
+                <label for="email">Telefone:</label>
+                <input style="margin-bottom: 10px;" type="tel" id="email2" name="email2" required>
+                
+                <input class="btn" type="submit" value="Enviar">
+                <h3>Insira seu nome e numero para continuar</h3>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
